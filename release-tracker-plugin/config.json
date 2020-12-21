@@ -40,7 +40,7 @@
     },
     {
         "key": "ghToken",
-        "hint": "Optional - Helpful in preventing rate limiting",
+        "hint": "Required for private repos only - also useful to prevent rate limiting.",
         "name": "GitHub Personal Token",
         "type": "string",
         "order": 5,

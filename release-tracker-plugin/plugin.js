@@ -27,16 +27,13 @@ async function setupPlugin({ config, global }) {
         if (githubRes.status !== 200) {
             throw new Error('Invalid GitHub repo owner or name')
         }
-        console.log(global)
-        console.log(global)
 
     } catch {
         throw new Error('Invalid PostHog Personal API key')
     }
 }
 
-async function runEveryMinute({ config, global }) {
-    console.log(global)
+async function runEveryDay({ config, global }) {
     const annotationsResponse = await fetchWithRetry(
         `${global.posthogHost}/api/annotation/?scope=organization&deleted=false`, 
         global.posthogOptions
