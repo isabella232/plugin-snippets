@@ -7,9 +7,12 @@ async function setupPlugin({ config, global }) {
         }
     } 
 
+    const ghBasicAuthToken = Buffer.from(`${config.ghOwner}:${config.ghToken}`).toString('base64')
+    
+
     global.ghOptions = config.ghToken ? { 
         headers: {
-            'Authorization': `token ${config.ghToken}`
+            'Authorization': `Basic ${ghBasicAuthToken}`
         }
     } : {}
 
