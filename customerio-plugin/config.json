@@ -1,0 +1,23 @@
+[
+    {
+        "markdown": "Customer.io Authentication Details"
+    },
+    {
+        "key": "customerioSiteId",
+        "hint": "Provided during the Customer.io setup",
+        "name": "Customer.io Site ID",
+        "type": "string",
+        "order": 1,
+        "default": "",
+        "required": true
+    },
+    {
+        "key": "customerioToken",
+        "hint": "Provided during the Customer.io setup",
+        "name": "Customer.io Token",
+        "type": "string",
+        "order": 2,
+        "default": "",
+        "required": true
+    }
+]
