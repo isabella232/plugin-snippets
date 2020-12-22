@@ -1,4 +1,9 @@
 async function setupPlugin({ config, global }) {
+    // Remove trailing slashes
+    config.posthogHost = config.posthogHost.replace(/\/$/, '')
+    config.gitlabHost = config.gitlabHost.replace(/\/$/, '')
+
+
     global.posthogHost = config.posthogHost.includes('http') ? config.posthogHost : 'https://' + config.posthogHost
 
     global.gitlabApiBaseUrl =
