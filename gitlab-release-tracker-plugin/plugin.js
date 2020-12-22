@@ -1,10 +1,9 @@
 async function setupPlugin({ config, global }) {
     global.posthogHost = config.posthogHost.includes('http') ? config.posthogHost : 'https://' + config.posthogHost
 
-    global.gitlabApiBaseUrl = (
-        config.gitlabHost.includes('http') ? config.gitlabHost : 
-        'https://' + config.gitlabHost
-    ) + `/api/v4/projects/${config.gitlabProjectId}`
+    global.gitlabApiBaseUrl =
+        (config.gitlabHost.includes('http') ? config.gitlabHost : 'https://' + config.gitlabHost) +
+        `/api/v4/projects/${config.gitlabProjectId}`
 
     global.posthogOptions = {
         headers: {
@@ -15,7 +14,7 @@ async function setupPlugin({ config, global }) {
     global.gitlabOptions = config.gitlabToken
         ? {
               headers: {
-                  Authorization: `Bearer ${global.gitlabToken}`,
+                  Authorization: `Bearer ${config.gitlabToken}`,
               },
           }
         : {}
@@ -45,15 +44,12 @@ async function runEveryDay({ config, global }) {
     const annotationsJson = await annotationsResponse.json()
     let annotations = new Set(annotationsJson.results.map((annotation) => annotation.content))
 
-    const gitlabTagsResponse = await fetchWithRetry(
-        `${global.gitlabApiBaseUrl}/repository/tags`,
-        global.gitlabOptions
-    )
+    const gitlabTagsResponse = await fetchWithRetry(`${global.gitlabApiBaseUrl}/repository/tags`, global.gitlabOptions)
 
     const gitlabTagsJson = await gitlabTagsResponse.json()
 
     const newTags = gitlabTagsJson
-        .filter(tag => !!tag.commit)
+        .filter((tag) => !!tag.commit)
         .map((tag) => ({
             name: tag.name,
             date: tag.commit.authored_date,

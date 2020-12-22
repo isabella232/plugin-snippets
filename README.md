@@ -6,4 +6,4 @@ A collection of PostHog plugins that can be used by pasting the code and config 
 
 ## Why Plugin Snippets?
 
-Plugin snippets allow users to create flexible plugins that they can edit to better suit their needs. They are also useful while we improve the plugin versioning and updating functionality of our plugin server. 
+Plugin snippets allow users to create flexible plugins that they can edit to better suit their needs. They are also useful while we improve the plugin versioning and updating functionality of our plugin server.
