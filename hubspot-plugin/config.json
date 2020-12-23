@@ -1,0 +1,14 @@
+[
+    {
+        "markdown": "Hubspot Authentication Details"
+    },
+    {
+        "key": "hubspotApiKey",
+        "hint": "Can be acquired under Profile Preferences -> Integrations",
+        "name": "Hubspot API Key",
+        "type": "string",
+        "order": 1,
+        "default": "",
+        "required": true
+    }
+]
