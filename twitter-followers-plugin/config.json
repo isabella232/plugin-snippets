@@ -1,0 +1,14 @@
+[
+    {
+        "markdown": "Configuration details for the Twitter Followers Plugin."
+    },
+    {
+        "key": "twitterHandle",
+        "hint": "Without the @",
+        "name": "Twitter Handle",
+        "type": "string",
+        "order": 1,
+        "default": "https://app.posthog.com",
+        "required": false
+    }
+]
