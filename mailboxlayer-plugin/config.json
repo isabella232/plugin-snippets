@@ -1,0 +1,14 @@
+[
+    {
+        "markdown": "Mailboxlayer Authentication Details"
+    },
+    {
+        "key": "mailboxlayerApiKey",
+        "hint": "",
+        "name": "Mailboxlayer API Key",
+        "type": "string",
+        "order": 1,
+        "default": "",
+        "required": true
+    }
+]
