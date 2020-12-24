@@ -1,0 +1,14 @@
+[
+    {
+        "markdown": "Sendgrid Authentication Details"
+    },
+    {
+        "key": "sendgridApiKey",
+        "hint": "The key needs PUT access",
+        "name": "Sendgrid API Key",
+        "type": "string",
+        "order": 1,
+        "default": "",
+        "required": true
+    }
+]

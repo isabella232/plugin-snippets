@@ -9,7 +9,7 @@ To view the follower count over time in Insights, do the following:
 3. A new dropdown will appear, titled 'Select property'. Select `follower_count`
 4. Visualize your follower count over time!
 
-## Installation 
+## Installation
 
 1. Visit 'Project Plugins' under 'Settings'
 2. Enable plugins if you haven't already done so
@@ -19,4 +19,3 @@ To view the follower count over time in Insights, do the following:
 6. Hit 'Save' and the configuration options will appear for you to fill in
 7. Fill in the configuration options and hit 'Save' again
 8. Enable your plugin and you're good to go!
-

@@ -12,7 +12,7 @@ Currently supported data:
 -   Company Websites
 -   Names ("first" and "last")
 
-## Installation 
+## Installation
 
 1. Visit 'Project Plugins' under 'Settings'
 2. Enable plugins if you haven't already done so

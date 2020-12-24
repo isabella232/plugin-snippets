@@ -1,8 +1,8 @@
-# Customer.io Plugin (Beta)
+# Sendgrid Plugin (Beta)
 
-Send event data into [Customer.io](https://customer.io/). User emails will also be sent if available.
+Send emails and user data to Sendgrid when you identify users using PostHog.
 
-![Customer.io Screenshot](readme-assets/customer-io.png)
+![Sendgrid Dashboard](readme-assets/sendgrid-dash.png)
 
 ## Installation
 

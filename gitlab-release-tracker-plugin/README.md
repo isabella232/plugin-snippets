@@ -4,7 +4,7 @@ Integrate PostHog with GitHub and get automatic graph annotations based on your 
 
 ![Plugin Screenshot](readme-assets/release-tracker.png)
 
-## Installation 
+## Installation
 
 1. Visit 'Project Plugins' under 'Settings'
 2. Enable plugins if you haven't already done so
