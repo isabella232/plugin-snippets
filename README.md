@@ -18,3 +18,7 @@ Plugin snippets allow users to create flexible plugins that they can edit to bet
 6. Hit 'Save' and the configuration options will appear for you to fill in
 7. Fill in the configuration options and hit 'Save' again
 8. Enable your plugin and you're good to go!
+
+## Questions?
+
+### [Join our Slack community.](https://join.slack.com/t/posthogusers/shared_invite/enQtOTY0MzU5NjAwMDY3LTc2MWQ0OTZlNjhkODk3ZDI3NDVjMDE1YjgxY2I4ZjI4MzJhZmVmNjJkN2NmMGJmMzc2N2U3Yjc3ZjI5NGFlZDQ)
